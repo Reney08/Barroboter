@@ -71,12 +71,12 @@ class StepperInit:
     def getSchalterRechtsStatus(self) -> bool:
         """Check the status of the right limit switch."""
         self.logger.info(f"status of right button {GPIO.input(self.schalterRechtsPin)}")
-        return GPIO.input(self.schalterRechtsPin) == 1
+        return GPIO.input(self.schalterRechtsPin) == 0
 
     def getSchalterLinksStatus(self) -> bool:
         """Check the status of the left limit switch."""
         self.logger.info(f"status of right button {GPIO.input(self.schalterLinksPin)}")
-        return GPIO.input(self.schalterLinksPin) == 1
+        return GPIO.input(self.schalterLinksPin) == 0
 
     def init(self):
         """Execute the initialization sequence from stepper_init.json."""
