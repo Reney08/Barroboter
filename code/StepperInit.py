@@ -16,8 +16,8 @@ class StepperInit:
     STEP = 17
     DIR = 27
     EN = 23
-    schalterLinksPin = 5
-    schalterRechtsPin = 26
+    schalterLinksPin = 26
+    schalterRechtsPin = 5
 
     # Timing and delay
     us_delay = 950
