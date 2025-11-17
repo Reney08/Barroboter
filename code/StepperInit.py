@@ -75,7 +75,7 @@ class StepperInit:
 
     def getSchalterLinksStatus(self) -> bool:
         """Check the status of the left limit switch."""
-        self.logger.info(f"status of right button {GPIO.input(self.schalterLinksPin)}")
+        self.logger.info(f"status of left button {GPIO.input(self.schalterLinksPin)}")
         return GPIO.input(self.schalterLinksPin) == 0
 
     def init(self):
